@@ -835,6 +835,11 @@ properly.
    .row .offset-9    { margin-left: 0%; }
    .row .offset-10   { margin-left: 0%; }
    .row .offset-11   { margin-left: 0%; }
+
+
+   #resume .skillsAlign{
+      padding-left:0;
+   }
 }
 
 /* mobile narrow
@@ -843,11 +848,56 @@ properly.
 
    .row { width: auto; }
 
+   img.skillsImg {
+      height: 100%;
+      width: 100%
+   }
+   
+   span.skillsText {
+      display: block;
+      vertical-align:bottom;
+      font: 8px/30px 'opensans-bold', sans-serif;
+      /* text-align: left; */
+   }
+   
+   div.skillsItem {
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+      width: 10%;
+      margin-left: 4%;
+      padding-left:3%;
+      padding-top:4%;
+      margin-bottom:2%;
+   }
 }
+
 
 /* larger screens
 --------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+   img.skillsImg {
+      height: 100%;
+      width: 100%
+   }
+   
+   span.skillsText {
+      display: block;
+      vertical-align:bottom;
+      font: 16px/30px 'opensans-bold', sans-serif;
+      /* text-align: left; */
+   }
+   
+   div.skillsItem {
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+      width: 10%;
+      margin-left: 4%;
+      padding-left:3%;
+      padding-top:4%;
+      margin-bottom:2%;
+   }
 
    .wide .row { max-width: 1180px; }
 
@@ -911,6 +961,9 @@ div.skillsItem {
    padding-top:4%;
    margin-bottom:2%;
 }
+
+
+
 
 
 

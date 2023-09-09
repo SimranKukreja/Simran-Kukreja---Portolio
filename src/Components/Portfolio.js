@@ -13,8 +13,7 @@ class Portfolio extends Component {
           {/* <a href={projects.github} target="_blank">
           </a> */}
           &nbsp;&nbsp;
-            <a href={projects.github}>
-                  <i className="fa fa-github portfolio"></i>
+            <a href={projects.github} target="_blank">
           </a>
           </h3>
           {projects.date}
@@ -22,6 +21,7 @@ class Portfolio extends Component {
             {projects.title} 
           </p> */}
           <p className="info">{projects.desc}</p>
+          <br/>
         </div>
       );
     });

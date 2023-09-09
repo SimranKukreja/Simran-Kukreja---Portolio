@@ -91,7 +91,7 @@ class Resume extends Component {
               </div>
               <div class="skillsItem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
-                <span class="skillsText">Go(Golang)</span>
+                <span class="skillsText">Go</span>
               </div>
               <div class="skillsItem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
