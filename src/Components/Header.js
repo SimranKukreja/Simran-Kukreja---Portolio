@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
+import Animation from "./Animation";
+
+
+// import ParticlesBackground from "./ParticlesBackground";
 
 class Header extends Component {
   render() {
@@ -10,11 +14,13 @@ class Header extends Component {
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
+    const resumeDownload = this.props.data.resumedownload;
+    
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
-
+        <ParticlesBg type="cobweb" color="#ffffff" number="5" bg={true} />
+        {/* <ParticlesBackground/> */}
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -49,7 +55,7 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#contact">
+              <a className="smoothscroll" href="#footer">
                 Contact
               </a>
             </li>
@@ -58,19 +64,18 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <Fade bottom>
-              <h1 className="responsive-headline">{name}</h1>
-            </Fade>
-            <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
-            </Fade>
-            <hr />
+              <h2 className="name responsive-headline">{name}</h2>
+              <Animation/>
+            {/* <hr/> */}
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
+                {/* <a href={project} className="button btn project-btn">
+                  <i className="fa fa-book"></i>Resume
+                </a> */}
+                <a href={resumeDownload} target="_blank" className="button btn project-btn">
+                  <i className="fa fa-download"></i>Download Resume
                 </a>
-                <a href={github} className="button btn github-btn">
+                <a href={github} target="_blank" className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>

@@ -27,6 +27,7 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 header {
    position: relative;
@@ -36,8 +37,73 @@ header {
    
    text-align: center;
    overflow: hidden;
+   
 }
 
+canvas.particles-bg-canvas-self {
+   background: #014a98;
+   opacity: 40%;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: #343F4F;
+  min-height: 20vh;
+
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -90px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 30px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
 /* vertically center banner section */
 header:before {
    content: '';
@@ -56,7 +122,7 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   /* font: 90px/1.1em 'menlo', sans-serif; */
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -64,7 +130,7 @@ header .banner-text h1 {
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
    color: #ddd;
-   margin: 0 auto;
+   margin: 0 0;
    width: 70%;
 }
 header .banner-text h3 span,
@@ -174,7 +240,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
+ul#nav li.current a { color: #008000; }
 
 
 /* ------------------------------------------------------------------ */
@@ -182,7 +248,8 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   /* background: #ecf4f7; */
+   background: #ffffff;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -193,28 +260,53 @@ ul#nav li.current a { color: #fe6928; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #084f96;
    margin-bottom: 12px;
 }
+
 #about p {
    line-height: 30px;
-   color: #ccc;
+   color: #000;
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 50%;
+   height: 50%;
    border-radius: 100%;
+   margin-left: 20%;
 }
+#about .painting {
+   position: relative;
+   width: 125px;
+   height: 150px;
+   border-radius: 0%;
+   margin-left: 10%;
+}
+
+#about .paintingC {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 0%;
+   margin-left: 10%;
+   border-radius:100%
+}
+
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
+#about .main-col { padding-right: 5%; padding-left: 5%;float:none}
 #about .download .button {
    margin-top: 6px;
    background: #444;
+}
+
+.nine.columns.main-col.skillsAlign {
+   float: none;
+   padding-left: 25%;
+   padding-right:0%
 }
 #about .download .button:hover {
    background: #fff;
@@ -225,13 +317,39 @@ ul#nav li.current a { color: #fe6928; }
    font-size: 20px;
 }
 
+ .bioMarg {
+   margin-left:20%;
+   margin-right:20%;
+}
+.bioMarg2 {
+   margin-left:10%;
+   margin-right:20%;
+}
+
+ .aboutCol {
+   float: left;
+   width: 40%;
+   text-align:justify;
+   vertical-align:center;
+ }
+
+ 
+ /* Clear floats after the columns */
+ .aboutRow:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+
+
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background: #053364;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -246,7 +364,7 @@ ul#nav li.current a { color: #fe6928; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #0762f9;
+   border-bottom: 3px solid #acbdde;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -256,23 +374,57 @@ ul#nav li.current a { color: #fe6928; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .work {
+.skills, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
+   border-top: 1px solid #E8E8E8;
    border-bottom: 1px solid #E8E8E8;
+   padding-top: 48px;
+}
+
+.certifications {
+   /* margin-bottom: 48px; */
+   /* padding-bottom: 24px; */
+   border-top: 1px solid #E8E8E8;
+   /* border-bottom: 1px solid #E8E8E8; */
+   padding-top: 48px;
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: #ffffff;
    margin-bottom: 18px;
    margin-top: 9px;
 }
+#portfolio .work {
+   border-bottom: 1px solid #053364;
+}
+
+#portfolio .info {
+   text-align: justify;
+   font: 16px/24px 'monospace-regular', serif;
+   font-weight: 500;
+   color: #053364;
+   margin-bottom: 18px;
+   margin-top: 9px;
+   white-space:pre-wrap;
+}
+
+img .gitLogo {
+   height: 2%;
+   width: 2%
+}
+
+#portfio h3 {
+   color:#053364;
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
 #resume .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
 #resume .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
+   font: 15px/30px 'opensans-bold', sans-serif;
    margin-top: 6px;
 }
 
@@ -412,18 +564,29 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background: #FFFFFF;
    padding-top: 90px;
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   /* font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #95A3A3; */
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
 }
+
+#portfolio h1 span {
+   border-bottom: 3px solid #053364;
+   padding-bottom: 6px;
+   color: #053364;
+}
+
+
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
@@ -595,7 +758,7 @@ ul#nav li.current a { color: #fe6928; }
 }
 #call-to-action h1 span { display: none; }
 #call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
+   /* font-family: 'FontAwesome'; */
    content: "\f0ac";
 	padding-right: 10px;
 	font-size: 72px;
@@ -928,19 +1091,21 @@ call-to-action .button {
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #303030;
+   color: #053364;
    font-size: 14px;
    text-align: center;
    position: relative;
+   background: #053364
 }
 
-footer a, footer a:visited { color: #525252; }
+footer a, footer a:visited { color: #fff; }
 footer a:hover, footer a:focus { color: #fff; }
 
 /* copyright */
 footer .copyright {
     margin: 0;
     padding: 0;
+    color: #fff;
  }
 footer .copyright li {
     display: inline-block;
@@ -951,6 +1116,14 @@ footer .copyright li {
 .ie footer .copyright li {
    display: inline;
 }
+
+footer .footer-text {
+   font-size: 15px;
+   color:#eef6ee;
+   font-family: 'opensans-bold', sans-serif;
+   margin:0;
+}
+
 footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
@@ -966,13 +1139,14 @@ footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
    font-size: 30px;
+   color: #fff;
 }
 footer .social-links li {
     display: inline-block;
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #fff;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
@@ -1017,8 +1191,8 @@ footer .social-links li:first-child { margin-left: 0; }
    margin-right: 15px;
 }
 .project-btn{
-   background-color: #1abc9c !important;
+   background-color: #084f96 !important;
 }
 .github-btn{
-   background-color: #34495e !important;
+   background-color: #2b3947 !important;
 }

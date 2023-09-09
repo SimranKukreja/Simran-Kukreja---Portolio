@@ -1,4 +1,4 @@
-# React Nice Resume :page_with_curl:
+# Simran Kukreja
 
 ### [LIVE DEMO](https://nordicgiant2.github.io/react-nice-resume-page/index.html)
 
