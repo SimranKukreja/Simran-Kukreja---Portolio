@@ -1,185 +1,140 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
-    "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "name":"Simran Kukreja",
+    "description":"and this is a glimpse into my jouney thus far",
+    "image":"profpic.jpeg",
+    "painting1":"painting1.jpeg",
+    "painting2":"painting2.jpeg",
+    "painting3":"painting3.jpeg",
+    "painting4":"painting4.jpeg",
+    "bio":"I'm currently pusuing a master's degree in Computer Science from the University of Florida, have completed an SDE internship at Health Equity over the summer and am about to start in my new role as an SDE Intern at HubSpot.",
+    "bio4":"I would love to connect, discuss ideas, and collaborate with people, so feel free to reach out!",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
+    "email": "simrankukreja0612@gmail.com",
     "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "github":"https://github.com/SimranKukreja",
+    "project":"https://github.com/SimranKukreja",
     "address":{
       "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "city":"Gainesville",
+      "state":"Florida",
+      "zip": "32608"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://www.simrankukrejaweb.com",
+    "resumedownload":"https://drive.google.com/file/d/108cRoEbiOcdAI5iBJUBrXC13Tptl7yVi/view?usp=sharing",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/simran-kukreja/",
         "className":"fa fa-linkedin"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"http://instagram.com/simran__kukreja",
         "className":"fa fa-instagram"
       },
       {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/SimranKukreja",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Florida",
+        "degree":"Master of Science in Computer Science (GPA: 4.0/4.0)",
+        "graduated":"August 2022 - May 2024",
+        "description":"Relevant coursework - Analysis of Algorithms, Advanced Data Structures, Advanced Computer Networks, Distributed Operating System Principles, User Experience Design, Software Engineering"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Mumbai",
+        "degree":"Bachelor of Engineering in Computer Engineering (CGPA: 9.15/10)",
+        "graduated":"August 2015 - May 2019",
+        "description":"Relevant coursework - Object Oriented Programming, Database Management Systems, Distributed Databases, Web Development, Machine Learning, Artificial Intelligence, Operating"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Health Equity",
+        "title":"SDE Intern",
+        "years":"May 2023 - August 2023",
+        "description":"• Integrating Azure DevOps and ServiceNow platforms to enable bidirectional communication for automating user story creation in ADO upon a ticket creating and approval in ServiceNow.\n• Implemented user stories for Virtual Agent custom conversations, resulting in a 30% reduction in customer queries by automating topic flows.\n• Enhanced the organization's health score to 93% by developing user stories in the domain of security, performance, and manageability.\n• Designed an intuitive UX Design for the Employee Service Portal, improving user engagement by 25%.\n• Developed JavaScript-based Client Scripts and business processes for enabling features."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Deloitte USI",
+        "title":"Consultant - Salesforce Development",
+        "years":"August 2019 - July 2022",
+        "header1":"SieSales Project (Client - Siemens)\n",
+        "header2":"\nStrategic Price Recommendation Portal (Client - McDonald’s)\n",
+        "description":"Developed 20+ full-stack features for the ‘Partner Finder’ site with Apex and SOQL data processing, and dynamic JavaScript UI.\n• Optimized SOQL and SOSL query performance by 20% for the site enabling advanced multi-parameter search and sorting.\n• Automated territory management, achieving 75% faster execution and 0 defects using batch classes for bulk processing and JavaScript-heavy components for UI. Led the initiative to build this solution into a plug-and-play package to use across projects.\n• Instrumental in designing the territory data model and architecture, and crafting high-level designs for several project user stories.\n• Integrated Tableau dashboard into Salesforce and performed ETL on 10M records of sensitive client data with 100% accuracy.",
+        "description2":"Developed a robust solution integrating Google Maps API to enable users to select competitor stores for real-time product price comparison using Apex, REST, SOQL, React, and JavaScript, resulting in a 25% increase in customer conversion rate.\n• Implemented a dynamic Chart.js dashboard for performance statistics (gross margin, food, paper costs, guest count), leading to a 10% operational cost reduction. Incorporated multilingualism in the portal, increasing customer engagement by 20%."
+      },
+      {
+        "company":"Oracle Financial Servcies Private Limited",
+        "title":"SDE Intern",
+        "years":"December 2017 - January 2018",
+        "description":"• Developed Restful Web Services to support CRUD operations on a web application, optimizing API response time by 40%.\n• Built a highly responsive UI using Java Server Pages, Java Beans, and Servlets that reduced page load times by 50%."
+      }
+    ],
+    "certs":[
+      {
+        "name":"5X Salesforce Certified Application Architect",
+        "link": "https://www.salesforce.com/trailblazer/simrankukreja"
+      },
+      {
+        "name":"Go (Golang)",
+        "link": "https://www.udemy.com/certificate/UC-f2c90860-9634-4ac5-b320-25909b9a73db/?utm_medium=email&utm_campaign=email&utm_source=sendgrid.com"
       }
     ],
     "skills":[
       {
-        "name":"Python",
-        "level":"60%"
-      },
-      {
-        "name":"VueJs",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
+        "name":"Java",
+        "src":"/workspaces/react-nice-resume/public/images/Icons/Java.jpeg"
       }
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"GatorTaxi",
+        "desc":"• Developed UF ride network, handling 2000 active ride requests while enabling search, booking, cancellation, and updates.\n• Utilized advanced data structures such as MinHeap and RedBlackTrees for the implementation.\n• The Min-Heap data structure has been implemented to store the ride details i.e., (rideNumber, rideCost, tripDuration) ordered by the rideCost and tripDuration(in case two rides have the same rideCost - given that every rideCost-tripDuration combination will be unique).\n• The Red-Black tree data structure has been implemented to store the ride details i.e., (rideNumber, rideCost, tripDuration) ordered by the rideNumber.",
+        "date":"Mar 2023 - Apr 2023",
+        "github":"https://github.com/SimranKukreja/Advanced-Data-Structures-Project"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Buying and Selling Stocks Project",
+        "desc":"• Implemented the buying and selling stock problem variations using Dynamic Programming and Greedy programming paradigms, reducing computation time by 60% and 45% respectively.",
+        "date":"Nov 2022 - Dec 2022",
+        "github":"https://github.com/SimranKukreja/Analysis-of-Algorithms-Project"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"Conversational AI chatbot design (Client: GameOn Technologies)",
+        "desc":"• Designed a conversational AI chatbot in the cryptocurrency space by conducting user interviews and constructing affinity diagrams, personas, storyboards, and dynamic prototypes.\n• Design tools used: Figma, Miro",
+        "date":"Oct 2022 - Dec 2022",
+        "github":"https://github.com/SimranKukreja/User-Experience-Design"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Twitter Clone",
+        "desc":"• Implemented a Twitter engine capable of registering users, making tweets, re-tweets, and allowing searches based on hashtags and mentions. \n• Technologies used: Erlang, Actor Model, Distributed Operating System Principles",
+        "date":"Nov 2022 - Dec 2022",
+        "github":"https://github.com/SimranKukreja/Distributed-Operating-System-Principles"
       },
       {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
+        "title":"Bitcoin Miner",
+        "desc":"• Developed a distributed Bitcoin miner that runs well on multi-core machines, utilizing the Erlang actor model and SHA 256.",
+        "date":"Aug 2022 - Sep 2022",
+        "github":"https://github.com/SimranKukreja/Distributed-Operating-System-Principles"
       },
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"3D Face Reconstruction from a Single Image",
+        "desc":"• Implemented a joint method to reconstruct 3D facial geometry and predict dense alignment from a single image by mapping pixels to a 2D map and training a Convolutional Neural Network.\n• Enabled reconstruction of images having arbitrary poses, expressions, alignments, and non-uniform illuminations.\n• Improved accuracy and reconstruction quality compared to previous methods that required multiple images or a 3D model.\n• Technologies used: Python, TensorFlow, Dlib, and opencv2",
+        "date":"Oct 2018 - Dec 2018",
+        "github":"https://github.com/SimranKukreja"
       }
+      
     ]
   }
 }
