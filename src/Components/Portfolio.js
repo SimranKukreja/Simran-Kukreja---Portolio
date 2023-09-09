@@ -14,7 +14,6 @@ class Portfolio extends Component {
           </a> */}
           &nbsp;&nbsp;
             <a href={projects.github} target="_blank">
-                  <i className="fa fa-github portfolio"></i>
           </a>
           </h3>
           {projects.date}

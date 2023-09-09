@@ -939,6 +939,30 @@ properly.
 }
 
 
+img.skillsImg {
+   height: 100%;
+   width: 100%
+}
+
+span.skillsText {
+   display: block;
+   vertical-align:bottom;
+   font: 16px/30px 'opensans-bold', sans-serif;
+   /* text-align: left; */
+}
+
+div.skillsItem {
+   vertical-align: top;
+   display: inline-block;
+   text-align: center;
+   width: 10%;
+   margin-left: 4%;
+   padding-left:3%;
+   padding-top:4%;
+   margin-bottom:2%;
+}
+
+
 
 
 
