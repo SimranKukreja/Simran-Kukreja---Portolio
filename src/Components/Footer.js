@@ -17,19 +17,18 @@ class Footer extends Component {
 
     return (
       <footer>
-        <div className="row">
+        <section id="footer">
+        <div className="row footer">
           <Fade bottom>
             <div className="twelve columns">
+              <ul className="footer-text"><h3>CONNECT AND COLLABORATE</h3></ul>
+              <hr className=""></hr>
+              <ul className="footer-text">Interested in tech, music, art, or anything under the sun?</ul>
+              <ul className="footer-text">Drop me an email at simrankukreja0612@gmail.com OR Find me on social media:</ul>
               <ul className="social-links">{networks}</ul>
 
               <ul className="copyright">
-                <li>&copy; Copyright 2021 Nordic Giant</li>
-                <li>
-                  Design by{" "}
-                  <a title="Styleshout" href="http://www.styleshout.com/">
-                    Styleshout
-                  </a>
-                </li>
+                <li>&copy; Copyright - Simran Kukreja</li>
               </ul>
             </div>
           </Fade>
@@ -40,6 +39,7 @@ class Footer extends Component {
             </a>
           </div>
         </div>
+        </section>
       </footer>
     );
   }

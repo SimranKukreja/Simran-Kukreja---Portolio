@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import Slide from "react-reveal";
 
 let id = 0;
 class Portfolio extends Component {
@@ -8,36 +7,43 @@ class Portfolio extends Component {
     if (!this.props.data) return null;
 
     const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/portfolio/" + projects.image;
-
       return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
+        <div key={projects.company} className="portNoOverflow">
+          <h3 className="portHeader">{projects.title} 
+          {/* <a href={projects.github} target="_blank">
+          </a> */}
+          &nbsp;&nbsp;
+            <a href={projects.github}>
+                  <i className="fa fa-github portfolio"></i>
+          </a>
+          </h3>
+          {projects.date}
+          {/* <p className="info">
+            {projects.title} 
+          </p> */}
+          <p className="info">{projects.desc}</p>
         </div>
       );
     });
 
     return (
       <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
-
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
+        <Slide left duration={1300}>
+            <div className="row portfolio">
+              <div className="two columns header-col">
+                <h1>
+                  <span>Projects</span>
+                </h1>
               </div>
+
+              <div className="nine columns main-col">{projects}</div>
             </div>
-          </div>
-        </Fade>
-      </section>
-    );
+          </Slide>
+        </section>
+    )
+
+
+
   }
 }
 

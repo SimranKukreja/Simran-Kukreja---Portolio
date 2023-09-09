@@ -23,6 +23,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Handlee';
+    src: local('Handlee'), url(./fonts/MyFont.ttff) format('ttff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
 @font-face {
     font-family: 'opensans-light';
     src: url('fonts/opensans/OpenSans-Light-webfont.eot');
