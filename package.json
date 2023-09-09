@@ -2,7 +2,7 @@
   "name": "reactniceresume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://SimranKukreja.github.io/simrankukreja.github.io",
+  "homepage": "http://github.com/SimranKukreja/simrankureja.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "build-gh":"parcel build --public-url 'https://SimranKukreja.github.io/simrankureja.github.io'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
