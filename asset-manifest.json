@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/SimranKukreja/simrankureja.github.io/static/css/main.31d6cfe0.css",
-    "main.js": "/SimranKukreja/simrankureja.github.io/static/js/main.2bcd2794.js",
-    "static/js/496.46efba70.chunk.js": "/SimranKukreja/simrankureja.github.io/static/js/496.46efba70.chunk.js",
-    "index.html": "/SimranKukreja/simrankureja.github.io/index.html",
-    "main.2bcd2794.js.map": "/SimranKukreja/simrankureja.github.io/static/js/main.2bcd2794.js.map",
-    "496.46efba70.chunk.js.map": "/SimranKukreja/simrankureja.github.io/static/js/496.46efba70.chunk.js.map"
+    "main.css": "/simrankureja.github.io/static/css/main.31d6cfe0.css",
+    "main.js": "/simrankureja.github.io/static/js/main.f3c6de47.js",
+    "static/js/496.46efba70.chunk.js": "/simrankureja.github.io/static/js/496.46efba70.chunk.js",
+    "index.html": "/simrankureja.github.io/index.html",
+    "main.f3c6de47.js.map": "/simrankureja.github.io/static/js/main.f3c6de47.js.map",
+    "496.46efba70.chunk.js.map": "/simrankureja.github.io/static/js/496.46efba70.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.2bcd2794.js"
+    "static/js/main.f3c6de47.js"
   ]
 }
